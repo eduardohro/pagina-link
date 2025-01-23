@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: #282828;
+    background-color: #000000;
     height: 100%;
 }
 
@@ -41,12 +41,39 @@ a {
 
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin: 250px 0 40px 0;
+   
 }
 
+.image-container {
+    position: relative;
+    display: inline-block;
+    max-width: 300px;
+    border-radius: 15px;
+    overflow: hidden; 
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%; /* Ajuste para controlar a altura do gradiente */
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+
 header img {
-    max-width: 120px;
+    max-width: 300px;
     margin-bottom: 20px;
+    border-radius: 15px;
 }
 
 header h1 {
@@ -91,6 +118,7 @@ a.link button:hover, footer a.btn-footer:hover {
 footer {
     text-align: center;
     margin: 30px;
+    padding-bottom: 40px;
 }
 
 footer a.btn-footer {
