@@ -17,6 +17,27 @@ body {
     height: 100%;
 }
 
+/* SCROLL BAR */
+
+* {
+    scrollbar-width: thin; 
+    scrollbar-color: #04d9ff #1e1e1e; 
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+::-webkit-scrollbar-thumb {
+    background: #04d9ff;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #029ebf;
+}
+
 .container {
     height: 100%;
     max-width: 550px;
